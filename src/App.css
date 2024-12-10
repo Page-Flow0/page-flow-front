@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.LoginBox {
+  width: 300px;
+  padding: 30px;
+  /* 안쪽 여백을 더 크게 설정 */
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* 그림자 효과를 더 강조 */
+  border-radius: 15px;
+  /* 로그인 창의 꼭지점을 더 둥글게 */
+  border: 2px solid #dee2e6;
+  /* 경계선을 좀 더 부각 */
+  text-align: center;
+  margin: 20px;
+  /* LoginBox와 다른 컴포넌트 사이의 간격을 추가 */
+}
+
+.ButtonBox {
+  display: flex;
+  justify-content: center;
+  /* 버튼을 가로로 가운데 정렬 */
+  align-items: center;
+  /* 버튼을 세로로 가운데 정렬 */
+  gap: 15px;
+  /* 버튼 간 간격을 더 넓게 설정 */
+  padding: 20px 0;
+}
