@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -48,7 +49,7 @@ body {
 }
 
 .LoginBox {
-  width: 300px;
+  width: 350px;
   padding: 30px;
   /* 안쪽 여백을 더 크게 설정 */
   background-color: white;
@@ -64,12 +65,44 @@ body {
 }
 
 .ButtonBox {
-  display: flex;
-  justify-content: center;
-  /* 버튼을 가로로 가운데 정렬 */
-  align-items: center;
-  /* 버튼을 세로로 가운데 정렬 */
-  gap: 15px;
+  display: grid;
   /* 버튼 간 간격을 더 넓게 설정 */
-  padding: 20px 0;
+  padding: 5px 0;
+}
+
+.checkBox {
+  padding: 10px;
+}
+
+.SignUpBox {
+  width: 500px;
+  padding: 30px;
+  /* 안쪽 여백을 더 크게 설정 */
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* 그림자 효과를 더 강조 */
+  border-radius: 15px;
+  /* 로그인 창의 꼭지점을 더 둥글게 */
+  border: 2px solid #dee2e6;
+  /* 경계선을 좀 더 부각 */
+  text-align: center;
+  margin: 20px;
+  /* LoginBox와 다른 컴포넌트 사이의 간격을 추가 */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  /* 수직 중앙 정렬 */
+  margin-bottom: 10px;
+  /* 각 그룹 간 간격 */
+}
+
+.form-label {
+  margin-right: 10px;
+  /* 라벨과 입력 필드 간격 */
+  min-width: 80px;
+  /* 라벨의 최소 너비 (정렬 보장) */
+  text-align: right;
+  /* 라벨 텍스트 오른쪽 정렬 */
 }
