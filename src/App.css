@@ -75,7 +75,7 @@ body {
 }
 
 .SignUpBox {
-  width: 500px;
+  width: 600px;
   padding: 30px;
   /* 안쪽 여백을 더 크게 설정 */
   background-color: white;
@@ -92,17 +92,19 @@ body {
 
 .input-group {
   display: flex;
-  align-items: center;
-  /* 수직 중앙 정렬 */
-  margin-bottom: 10px;
-  /* 각 그룹 간 간격 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 10px; /* 각 그룹 간 간격 */
 }
 
 .form-label {
+  margin-right: 10px; /* 라벨과 입력 필드 간격 */
+  min-width: 80px; /* 라벨의 최소 너비 (정렬 보장) */
+  text-align: right; /* 라벨 텍스트 오른쪽 정렬 */
+}
+
+.label-left {
+  width: 140px;
+  /* 레이블의 고정 너비 */
+  text-align: left;
   margin-right: 10px;
-  /* 라벨과 입력 필드 간격 */
-  min-width: 80px;
-  /* 라벨의 최소 너비 (정렬 보장) */
-  text-align: right;
-  /* 라벨 텍스트 오른쪽 정렬 */
 }

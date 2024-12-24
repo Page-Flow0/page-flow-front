@@ -16,9 +16,7 @@ const Login = () => {
             alert('Login failed: ' + error.message);
         }
     };
-
-
-
+    
     return (
         <div className="LoginBox">
             <h2>Login</h2>
