@@ -108,3 +108,29 @@ body {
   text-align: left;
   margin-right: 10px;
 }
+
+/* 공통 버튼 컨테이너 */
+.login-button-container {
+  display: flex;
+  justify-content: center;
+  /* 버튼을 중앙 정렬 */
+  margin: 10px 0;
+  /* 버튼 위아래 간격 */
+}
+
+/* 버튼 이미지 크기 통일 */
+.login-button-image {
+  height: 58px;
+  width: 270px;
+  object-fit: cover;
+  /* 이미지 왜곡 방지 */
+}
+
+/* Google Login 버튼도 같은 크기와 스타일 */
+div[role="button"] {
+  height: 58px !important;
+  width: 270px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

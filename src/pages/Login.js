@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import {at} from '../auth/fb'
+import NaverLogin from '../component/NaverLogin';
+import KakaLogin from '../component/KakaoLogin';
+import GoogleLogin from '../component/GoogleL';
 
 const Login = () => {
     const [ID, setID] = useState('');
@@ -16,7 +19,7 @@ const Login = () => {
             alert('Login failed: ' + error.message);
         }
     };
-    
+
     return (
         <div className="LoginBox">
             <h2>Login</h2>
@@ -54,7 +57,10 @@ const Login = () => {
                 <span className="mx-3 text-muted">간편로그인</span>
                 <div className="flex-grow-1 border-top"></div> {/* 구분선 */}
             </div>
-            <div>
+            <NaverLogin />
+            <KakaLogin />
+            <GoogleLogin/>
+            <div style={{ marginTop: '30px' }}>
                 <Link to="/signup">Don't have an account? Sign Up</Link>
             </div>
         </div>
