@@ -21,7 +21,7 @@ const SignUp = () => {
             </div>
             <div className="input-group">
                 <label htmlFor="idInput" className="form-label label-left">
-                    ID
+                    Name
                 </label>
                 <input
                     type="text"

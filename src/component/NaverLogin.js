@@ -2,7 +2,7 @@ import React from 'react';
 
 const NaverLogin = () => {
     const NAVER_CLIENT_ID = process.env.REACT_APP_Naver_CLIENT_ID;
-    const NAVER_REDIRECT_URI = "http://localhost:3000/test";  // 리다이렉트 URL
+    const NAVER_REDIRECT_URI = "http://localhost:3000/ntest";  // 리다이렉트 URL
     const NAVER_AUTH_URL = "https://nid.naver.com/oauth2.0/authorize";
 
     const handleLogin = () => {

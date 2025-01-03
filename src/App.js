@@ -2,7 +2,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from './pages/Login.js';
 import SignUpForm from './pages/SignUp.js';
-import TestForm from './pages/Test1.js';
+import NTestForm from './pages/NaverAC.js';
+import KTestForm from './pages/KakaoAC.js';
+import GTestForm from './pages/GooleAC.js';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -16,7 +18,9 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignUpForm />} />
-        <Route path="/test" element={<TestForm />} />
+        <Route path="/ntest" element={<NTestForm />} />
+        <Route path="/ktest" element={<KTestForm />} />
+        <Route path="/gtest" element={<GTestForm />} />
       </Routes>
     </Router>
   );
