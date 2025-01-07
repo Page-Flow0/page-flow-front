@@ -2,8 +2,7 @@
 import { Link } from 'react-router-dom';
 
 const SignUp = () => {
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
+
     return (
         
         <div className="SignUpBox">
@@ -75,6 +74,56 @@ const SignUp = () => {
             <div>
                 <Link to="/login">Already have an account? Login</Link>
             </div>
+            <div className="d-flex align-items-center my-4">
+                <div className="flex-grow-1 border-top"></div> {/* 구분선 */}
+            </div>
+
+            {/* 회원약관 동의 영역 */}
+            <div className="terms">
+                <h3>회원약관 동의</h3>
+                <div className="terms-box">
+                    <textarea
+                        className="terms-text"
+                        readOnly
+                        value={"[이용약관]\n이용약관입니다\n\n[개인정보 처리방침]\n개인정보 처리방침입니다."}
+                    />
+                </div>
+                <div className="form-check text-start">
+                    <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="termsOfService"
+                    />
+                    <label className="form-check-label " htmlFor="termsOfService">
+                        이용약관 동의 (필수)
+                    </label>
+                </div>
+                <div className="form-check text-start">
+                    <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="privacyPolicy"
+                    />
+                    <label className="form-check-label" htmlFor="privacyPolicy">
+                        개인정보 처리방침 동의 (필수)
+                    </label>
+                </div>
+                <div className="form-check text-start">
+                    <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="marketingConsent"
+                    />
+                    <label className="form-check-label" htmlFor="marketingConsent">
+                        마케팅 정보 수신 동의 (선택)
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" className="btn btn-primary mt-3">
+                Sign Up
+            </button>
+
         </div>
 
         
